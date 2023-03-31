@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Regrister">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:backgroundTint="@color/teal_100">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="254dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_teal_conner_16"
+                android:backgroundTint="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/emailId"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/bg_teal_conner_16"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:paddingRight="30px"
+                android:paddingLeft="40px"
+                android:textSize="20dp"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/emailErrorTv"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="254dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_teal_conner_16"
+                android:backgroundTint="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/passwordId"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/bg_teal_conner_16"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:paddingRight="30px"
+                android:paddingLeft="40px"
+                android:textSize="20dp"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/passwordErrorTv"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="254dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_teal_conner_16"
+                android:backgroundTint="@color/teal_700" />
+
+
+            <EditText
+                android:id="@+id/repeatPasswordId"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/bg_teal_conner_16"
+                android:hint="Nhập lại mật khẩu"
+                android:inputType="textPassword"
+                android:paddingRight="30px"
+                android:paddingLeft="40px"
+                android:textSize="20dp"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/repeatPasswordIdErrorTv"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="254dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_teal_conner_16"
+                android:backgroundTint="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/nameId"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/bg_teal_conner_16"
+                android:hint="Họ tên"
+                android:inputType="textPersonName"
+                android:paddingRight="30px"
+                android:paddingLeft="40px"
+                android:textSize="20dp"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/nameErrorTv"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="254dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_teal_conner_16"
+                android:backgroundTint="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/dateId"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/bg_teal_conner_16"
+                android:hint="Ngày sinh ( dd/mm/yyyy)"
+                android:inputType="textPersonName"
+                android:paddingRight="30px"
+                android:paddingLeft="40px"
+                android:textSize="20dp"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dateErrorTv"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="168dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#60BFB6"
+                android:forceDarkAllowed="true"
+                android:text="Đăng nhập"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+
+            <Button
+                android:id="@+id/regristerButtonId"
+                android:layout_width="163dp"
+                android:layout_height="53dp"
+                android:backgroundTint="@color/teal_700"
+                android:forceDarkAllowed="true"
+                android:text="Đăng ký"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

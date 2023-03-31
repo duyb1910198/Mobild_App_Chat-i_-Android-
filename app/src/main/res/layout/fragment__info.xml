@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/infoFragment"
+    tools:context=".Fragment_Info">
+
+    <RelativeLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_100">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avataImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_marginBottom="20dp"
+            android:maxWidth="250dp"
+            android:maxHeight="250dp"
+            android:minWidth="250dp"
+            android:minHeight="250dp"
+            android:src="@drawable/ic_person"
+            app:civ_circle_background_color="@color/teal_200" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avataImage"
+            android:background="@color/white">
+            <RelativeLayout
+                android:id="@+id/layoutButtonUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layoutTextViewInfo">
+
+                <Button
+                    android:layout_width="254dp"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@android:color/system_neutral1_300"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max"
+                    tools:targetApi="s" />
+
+                <Button
+                    android:id="@+id/updateImage"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Cập nhật ảnh đại diện"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutButtonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layoutButtonUpdate">
+
+                <Button
+                    android:layout_width="104dp"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@android:color/system_neutral1_300"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max"
+                    tools:targetApi="s" />
+
+                <Button
+                    android:id="@+id/cancelUpdate"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Hủy"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTextViewInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/lableInfo"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/nameInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/emailInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/dateInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lableInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:text="Tên:"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:text="Email"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:text="Ngày sinh"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutUpdateInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/lableInfo"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerHorizontal="true">
+                <EditText
+                    android:id="@+id/updateName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="60dp"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:id="@+id/emailTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="10dp"
+                    android:textSize="20dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/monthTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/updateDayDate"
+                        android:paddingTop="10dp"
+                        android:text="/"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/yearTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/updateMonthDate"
+                        android:paddingTop="10dp"
+                        android:text="/"
+                        android:textSize="20dp"/>
+                    <EditText
+                        android:id="@+id/updateDayDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        />
+                    <EditText
+                        android:id="@+id/updateMonthDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/monthTv"
+                        android:textSize="20dp"
+                        />
+                    <EditText
+                        android:id="@+id/updateYearDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/yearTv"
+                        android:textSize="20dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/layoutButtonInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/lableInfo">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@android:color/system_neutral1_300"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max"
+                    tools:targetApi="s" />
+                <Button
+                    android:id="@+id/updateInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="120dp"
+                    android:gravity="left"
+                    android:drawableLeft="@drawable/ic_update_info"
+                    android:text="Chỉnh sửa"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layoutSavaInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/lableInfo">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@android:color/system_neutral1_300"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max"
+                    tools:targetApi="s" />
+
+                <Button
+                    android:id="@+id/saveInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Lưu thay đổi"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layoutCanelSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/layoutSavaInfo">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@android:color/system_neutral1_300"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max"
+                    tools:targetApi="s" />
+
+                <Button
+                    android:id="@+id/cancelSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Hủy thay đổi"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

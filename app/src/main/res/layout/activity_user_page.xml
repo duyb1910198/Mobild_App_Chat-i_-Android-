@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_User_Page">
+
+    <RelativeLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="190dp"
+        android:background="@color/teal_100">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarUser"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_marginBottom="20dp"
+            android:maxWidth="250dp"
+            android:maxHeight="250dp"
+            android:minWidth="250dp"
+            android:minHeight="250dp"
+            android:src="@drawable/ic_person"
+            app:civ_circle_background_color="@color/teal_200" />
+
+        <Button
+            android:id="@+id/addFriendUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateUser"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/teal_700"
+            android:text="Thêm bạn" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/dateUser"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateUser"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/teal_700"
+                android:text="Xóa" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateUser"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/teal_700"
+                android:text="Hủy" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addFriendUser"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/teal_700"
+            android:text="Nhắn tin" />
+
+        <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatarUser"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/emailUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameUser"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/dateUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailUser"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

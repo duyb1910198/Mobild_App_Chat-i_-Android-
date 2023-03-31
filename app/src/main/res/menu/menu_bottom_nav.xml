@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actionSms"
+        android:icon="@drawable/ic_sms"
+        android:title="@string/action_sms"/>
+    <item
+        android:id="@+id/actionListFriend"
+        android:icon="@drawable/ic_people"
+        android:title="@string/action_list_friend"/>
+    <item
+        android:id="@+id/actionPrivate"
+        android:icon="@drawable/ic_person"
+        android:title="@string/action_private"/>
+</menu>

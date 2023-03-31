@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "668015749937",
+    "firebase_url": "https://messageapp-decbe-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "messageapp-decbe",
+    "storage_bucket": "messageapp-decbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668015749937:android:aa8c897fbb9b8cf8649e10",
+        "android_client_info": {
+          "package_name": "com.example.nlcs_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668015749937-spu7echr9j94lt63lfha441pa7lsti4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-44BGeJAngfpfN0MM4-EXYb3eSIjV5yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668015749937-spu7echr9j94lt63lfha441pa7lsti4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

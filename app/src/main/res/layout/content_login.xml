@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="324dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_teal_conner_16"
+                android:backgroundTint="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/emailNameId"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="0.2dp"
+                android:background="@drawable/bg_teal_conner_16"
+                android:hint="@string/login_email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="60dp"
+                android:paddingEnd="5dp"
+                android:textSize="25sp"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max"
+                android:autofillHints="email@gmail.com" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_ic_teal_700"
+                android:src="@drawable/ic_person_login"
+                android:contentDescription="@string/icon_background"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/emailErrorTv"
+            android:layout_width="300dp"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="324dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_teal_conner_16"
+                android:backgroundTint="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/passwordId"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bg_teal_conner_16"
+                android:backgroundTint="@color/white"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:paddingStart="60dp"
+                android:paddingEnd="30dp"
+                android:textSize="25sp"
+                android:autofillHints="********" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_key"
+                android:contentDescription="@string/icon_background"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/passwordErrorTv"
+            android:layout_width="300dp"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="168dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#60BFB6"
+                android:forceDarkAllowed="true"
+                android:text="@string/login"
+                android:textColor="#000000"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/loginButtonId"
+                android:layout_width="163dp"
+                android:layout_height="53dp"
+                android:backgroundTint="@color/teal_700"
+                android:forceDarkAllowed="true"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="164dp"
+                android:layout_height="54dp"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@android:color/system_neutral1_300"
+                android:text="@string/background_button"
+                android:textColor="#00838F"
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max"
+                tools:ignore="TextContrastCheck"
+                tools:targetApi="s" />
+
+            <Button
+                android:id="@+id/regristerButtonId"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:text="@string/sign_up"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+
+                app:cornerRadius="@dimen/car_ui_app_styled_dialog_width_max" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

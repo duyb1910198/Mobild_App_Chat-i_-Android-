@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">NLCS_App</string>
+    <string name="action_sms">Tin nhắn</string>
+    <string name="action_list_friend">Bạn bè</string>
+    <string name="action_private">Cá nhân</string>
+    <string name="mess_Fragment">mess Fragment</string>
+    <string name="list_Contact_Fragment">List Contact Fragment</string>
+    <string name="private_Fragment">private Fragment</string>
+    <string name="action_search">search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="appbar">appbar</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_test">test</string>
+    <string name="answer">Trả lời</string>
+    <string name="add">Thêm bạn</string>
+    <string name="agree">Đồng ý</string>
+    <string name="refuse">Từ chối</string>
+    <string name="delete">Xóa bạn</string>
+    <string name="cancel">Hủy kết bạn</string>
+    <string name="channel_name">My chanel</string>
+    <string name="channel_description">My chanel description</string>
+    <string name="login_email">Email đăng nhập</string>
+    <string name="email_login_description">Email login icon</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="icon_background">Icon background</string>
+    <string name="login">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="background_button">Background button</string>
+
+
+</resources>
